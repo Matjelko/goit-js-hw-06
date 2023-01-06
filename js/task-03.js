@@ -16,7 +16,7 @@ const images = [
 const list = document.querySelector(".gallery");
 
 const markup = images
-  .map((img) => `<li><img class="images" src="${img.url}" alt="${img.alt}".></img></li>`)
+  .map((img) => `<li><img class="images" src="${img.url}" alt="${img.alt}"></img></li>`)
   .join("");
 
   list.insertAdjacentHTML("beforeend", markup);

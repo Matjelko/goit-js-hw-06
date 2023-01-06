@@ -13,7 +13,11 @@ function handleSubmit(event){
         return alert("Wszystkie pola powinny zostać wypełnione.")
     }
     else{
-        console.log(`Email: ${email.value}, Password: ${password.value}`);
+        let object = {
+            email: email.value,
+            password: password.value
+        }
+        console.log(object);
         event.currentTarget.reset();
     }
 }
